@@ -1,65 +1,81 @@
-# 📊 Power BI Healthcare Case Analysis – Detailed View Dashboard
+# 📊 Power BI Healthcare Patient Waitlist Analysis Dashboard
 
 ## Project Overview  
-This project is an interactive **Power BI dashboard** designed to analyze healthcare case data across multiple dimensions such as **date, case type, specialty, age profile, and time bands**.  
+This project is an interactive **Power BI dashboard** built to analyze **healthcare patient waitlist data** across multiple dimensions such as **date, case type, specialty, age profile, and time bands**.
 
-The dashboard provides a **detailed drill-down view** that helps stakeholders understand patient distribution, workload patterns, and performance trends over time.
+The dashboard consists of two main views:
+- **Summary View** – high-level KPIs and trends  
+- **Detailed View** – drill-down operational analysis  
+
+It helps healthcare stakeholders monitor **patient waiting patterns, workload distribution, and specialty-wise performance**.
 
 ---
 
 ## Objectives  
 The main objectives of this project are:
 
-- To analyze **day case volumes** over a selected time period  
-- To identify trends across **medical specialties**  
-- To understand case distribution by **age groups**  
-- To measure patient flow using **time band segmentation**  
-- To enable users to perform **interactive filtering and drill-down analysis**
+- To track **overall patient waitlist volumes**
+- To compare **latest month vs previous month performance**
+- To analyze wait times by **case type and specialty**
+- To understand patient distribution by **age groups**
+- To monitor trends across **day case, inpatient, and outpatient cases**
+- To enable **interactive filtering and drill-down analysis**
+
+---
+
+## Dashboard Views  
+
+### 1. Summary View  
+The **Summary Dashboard** provides a high-level overview of key metrics and trends.
+
+Key components include:
+- KPI cards showing:
+  - **Latest month waitlist**
+  - **Previous month waitlist**
+- Donut chart:
+  - **Average wait time by case type**
+- Stacked bar chart:
+  - **Average/Median wait time by Time Bands and Age Profile**
+- Line charts:
+  - **Monthly trend analysis for Day Case, Inpatient, and Outpatients**
+- Specialty table:
+  - **Average wait time by medical specialty**
+
+This view is mainly used for **executive-level insights and performance monitoring**.
+
+![Summary View]([Screenshots/summary.png](https://1drv.ms/i/c/03f52ab1f56e0657/IQBQAXlxmSUbQ4WDQr77NSS4AbgbDpu55YsfehEgHH5H0Cc?e=z83oi1))
+
+---
+
+### 2. Detailed View  
+The **Detailed View Dashboard** allows users to perform deep operational analysis using a hierarchical matrix.
+
+Key features:
+- Interactive filters:
+  - **Archive Date (Range Slider)**
+  - **Case Type**
+  - **Specialty Name**
+  - **Age Profile**
+  - **Time Bands**
+- Hierarchical matrix:
+  - Date → Specialty → Age Group → Time Band  
+  - Displays **Day Case Count** and **Total Cases**
+  - Expand/collapse for drill-down analysis
+
+This view is mainly used for **analyst-level and operational decision-making**.
+
+![Detailed View]([Screenshots/detailed_view.png](https://1drv.ms/i/c/03f52ab1f56e0657/IQCTj-D2S1jETI3bBOAE9U-xAYw2MqGyAmgNRqURe1dQJyM?e=4qdHLU))
 
 ---
 
 ## Key Features  
 
-### 1. Interactive Filters  
-The dashboard includes dynamic slicers for:
-- **Archive Date (Range Slider)**
-- **Case Type**
-- **Specialty Name**
-- **Age Profile**
-- **Time Bands**
-
-These filters allow users to customize the analysis in real time.
-
----
-
-### 2. Hierarchical Matrix View  
-The main visual is a **hierarchical matrix table** that shows:
-
-- Date → Specialty → Age Group → Time Band  
-- Displays both **Day Case Count** and **Total Cases**  
-- Expand/collapse functionality for deep analysis  
-
----
-
-### 3. Drill-Down Analysis  
-Users can:
-- Drill from **overall date level** to **specialty**
-- Further drill into **age groups**
-- Finally analyze **time-based patient distribution**
-
-This enables multi-level operational insights.
-
----
-
-## Dashboard Screenshots  
-
-### Detailed View  
-Interactive matrix with drill-down by Date, Specialty, Age Profile, and Time Bands.  
-![Detailed View](Screenshots/detailed_view.png)
-
-### Overview Dashboard  
-High-level summary view with key filters and metrics.  
-![Overview](Screenshots/overview.png)
+- Fully interactive slicers for dynamic analysis  
+- Multi-level drill-down hierarchy  
+- KPI-based performance tracking  
+- Trend analysis over time  
+- Age-based and specialty-based segmentation  
+- Clean and professional UI design  
 
 ---
 
@@ -67,11 +83,12 @@ High-level summary view with key filters and metrics.
 
 This dashboard can be used for:
 
-- Hospital operations monitoring  
+- Hospital management reporting  
+- Patient flow monitoring  
+- Identifying high waiting specialties  
 - Resource and staff planning  
-- Identifying high-load specialties  
-- Understanding patient demographics  
-- Performance reporting for management  
+- Capacity and workload analysis  
+- Strategic healthcare decision making  
 
 ---
 
@@ -81,42 +98,46 @@ This dashboard can be used for:
 - **DAX (Data Analysis Expressions)**
 - **Power Query (ETL)**
 - Data modeling with relationships  
-- Interactive slicers and matrix visuals  
+- Time intelligence calculations  
+- Interactive visual analytics  
 
 ---
 
 ## Data Model  
 
-The data model includes the following key fields:
+The dataset includes the following key fields:
 
 - `Archive_Date`  
-- `Case_Type`  
+- `Case_Type` (Day Case / Inpatient / Outpatient)  
 - `Specialty_Name`  
-- `Age_Profile`  
+- `Age_Profile` (0–15, 16–64, 65+)  
 - `Time_Bands`  
-- `Day_Case`  
-- `Total_Cases`  
+- `Wait_List_Count`  
+- `Average_Wait_Time`  
+- `Median_Wait_Time`  
 
 ---
 
 ## Key Learnings  
 
-Through this project, I gained hands-on experience in:
+Through this project, I gained practical experience in:
 
-- Designing professional dashboards  
-- Creating hierarchical drill-down reports  
+- Designing end-to-end analytical dashboards  
+- Building executive and operational views  
 - Writing optimized DAX measures  
-- Applying data modeling best practices  
-- Building user-friendly analytical interfaces  
+- Implementing drill-down hierarchies  
+- Applying healthcare analytics concepts  
+- Creating data-driven business stories  
 
 ---
 
 ## Future Enhancements  
 
-- Add KPI cards for quick summary  
-- Include trend charts (line/area)  
-- Implement role-level security (RLS)  
-- Add forecasting using time intelligence  
+- Add forecast for patient waitlist  
+- Include SLA breach indicators  
+- Add hospital-level comparison  
+- Implement Role-Level Security (RLS)  
+- Publish to Power BI Service for web access  
 
 ---
 
