@@ -43,7 +43,7 @@ Key components include:
 
 This view is mainly used for **executive-level insights and performance monitoring**.
 
-![Summary View]([Screenshots/summary.png](https://1drv.ms/i/c/03f52ab1f56e0657/IQBQAXlxmSUbQ4WDQr77NSS4AbgbDpu55YsfehEgHH5H0Cc?e=z83oi1))
+![Summary View](Screenshots/summary.png)
 
 ---
 
@@ -64,7 +64,7 @@ Key features:
 
 This view is mainly used for **analyst-level and operational decision-making**.
 
-![Detailed View]([Screenshots/detailed_view.png](https://1drv.ms/i/c/03f52ab1f56e0657/IQCTj-D2S1jETI3bBOAE9U-xAYw2MqGyAmgNRqURe1dQJyM?e=4qdHLU))
+![Detailed View](Screenshots/detailed_view.png)
 
 ---
 
