@@ -1,0 +1,2 @@
+# Power-BI-Healthcare-Case-Analysis-Detailed-View-Dashboard
+This project is an interactive Power BI dashboard designed to analyze healthcare case data across multiple dimensions such as date, case type, specialty, age profile, and time bands.  The dashboard provides a detailed drill-down view that helps stakeholders understand patient distribution, workload patterns, and performance trends over time.
